@@ -7,45 +7,131 @@ html {
 body {
     display: flex;
     justify-content: center;
-    
-    
 }
 
 .page {
     display: flex;
     flex: 1;
     flex-direction: column;
-    max-width: 900px;
+    max-width: 1280px;
     border: 1px solid #fff;
 }
+
+/* background */
 
 .header,
 .hero,
 .footer {
     background: #1f2937;
-   padding: 0 48px;
+    padding: 0 100px;
 }
+
+.button,
+.call-to-action {
+    background: #3882f6;
+
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-weight: bolder;
+    color: #f9faf8;
+}
+
+/*header*/
 
 ul {
     display: flex;
     flex: 1;
     list-style: none;
-    padding: 0;
+    padding: 10px 0;
     margin: 0;
+    gap: 15px;
+    padding-top: 10px;
+}
+
+a,
+.hero p,
+.footer {
+    font-size: 18px;
+    text-decoration: none;
+    color: #e5e7eb;
+    font-weight: 100;
+}
+
+.logo {
+    font-weight: 800;
+    color: #f9faf8;
 }
 
 li:first-of-type {
     margin-right: auto;
 }
 
+/* content */
+
+.content {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+}
+
+.button {
+    padding: 5px 25px;
+    border-radius: 10px;
+}
+
+/* hero */
+
+.hero {
+    display: flex;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 590px;
+
+}
+
+.hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 590px;
+    flex: 1;
+}
+
+.hero-image > .image-box {
+    padding: 40px;
+    background: gray;
+    flex: 1;
+}
+
+/* gallery */
+
+h2 {
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1f2937;
+}
+
 .gallery {
     text-align: center;
 }
 
-.quote {
+/* quote */
 
+.quote {
+    background: #e5e7eb;
+    font-size: 36px;
+    color: #1f2937;
 }
 
-.footer {
+/* footer */
 
+.footer {
+    text-align: center;
+    padding: 20px;
 }
